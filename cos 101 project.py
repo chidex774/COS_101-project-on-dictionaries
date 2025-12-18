@@ -1,24 +1,24 @@
-dictionaries = { "1": ("igbo",{
-    "hello": "ndewo",
-    "thank you": "daalụ",
-    "please": "biko",
-    "yes": "ee",
-    "no": "mba",
-    "water": "mmiri",
-    "food": "nri",
-    "house": "ụlọ",
-    "friend": "enyi",
-    "love": "ịhụnanya",
-    "mother": "nne",
-    "father": "nna",
-    "child": "nwa",
-    "school": "ụlọ akwụkwọ",
-    "book": "akwụkwọ",
-    "sun": "anyanwụ",
-    "moon": "ọnwa",
-    "market": "ahịa",
-    "work": "ọrụ",
-    "money": "ego"})
+dictionaries = { "1": ("huasa",{
+    "hello": "sannu",
+    "thank you": "na gode",
+    "please": "don Allha",
+    "yes": "iya",
+    "no": "a'a",
+    "water": "ruwa",
+    "food": "abinci",
+    "house": "gida",
+    "friend": "aboki",
+    "love": "soyayya",
+    "mother": "uwa",
+    "father": "uba",
+    "child": "yaro",
+    "school": "mkaranta",
+    "book": "lattafi",
+    "sun": "rana",
+    "moon": "wata",
+    "market": "kasuwa",
+    "work": "aiki",
+    "money": "kudi"})
 }
 print("Choose 1 Igbo | 2 Hausa | 3 Yoruba | 4 Edo | q Quit")
 
@@ -45,3 +45,4 @@ while True:
         if w == "back":
             break
         print(words.get(w, "Error: word not found"))
+
