@@ -1,4 +1,4 @@
-words = {
+ dictionaries = { "1": ("igbo",{
     "hello": "ndewo",
     "thank you": "daalụ",
     "please": "biko",
@@ -18,10 +18,19 @@ words = {
     "moon": "ọnwa",
     "market": "ahịa",
     "work": "ọrụ",
-    "money": "ego"
+    "money": "ego"})
 }
-
-print("Type an English word to translate to Igbo")
+print("Choose 1 Igbo | 2 Hausa | 3 Yoruba | 4 Edo")
 while True:
-    w = input("> ").lower()
-    print(words.get(w, "Error: word not found"))
+    choice = input("> ").strip().lower()
+    lang = dictionaries.get(choice)
+    if not lang:
+        print("Invalid choice. Try 1,2,3,4")
+        continue
+
+    name, words = lang
+    print(f"Using {name}. Type a word")
+    while True:
+        w = input(f"{name}> ").strip().lower()
+        print(words.get(w, "Error: word not found"))
+
