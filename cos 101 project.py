@@ -37,7 +37,7 @@ dictionaries = { "1": ("huasa",{
     "moon": "ọnwa",
     "market": "ahịa",
     "work": "ọrụ",
-    "money": "ego"}), {"3":("Yoruba",{
+    "money": "ego"}), "3":("Yoruba",{
     "hello": "báwo",
     "thank you": "ẹ ṣé",
     "please": "jọ̀wọ́",
@@ -57,9 +57,49 @@ dictionaries = { "1": ("huasa",{
     "moon": "oṣùpá",
     "market": "ọjà",
     "work": "iṣẹ́",
-    "money": "owó",})
+    "money": "owó",}),"4": ("Edo", {
+    "hello": "ẹdọ",
+    "thank you": "òsẹ",
+    "please": "vbèè",
+    "yes": "ẹ̀ẹ̀",
+    "no": "ọ́vọ́",
+    "water": "àmẹ̀",
+    "food": "ẹmà",
+    "house": "òwá",
+    "friend": "èhòò",
+    "love": "ífuán",
+    "mother": "ìyẹ́",
+    "father": "òbà",
+    "child": "òmọ",
+    "school": "èkó",
+    "book": "ìvè",
+    "sun": "òvèvè",
+    "moon": "ùyẹ̀dẹ̀",
+    "market": "èkèn",
+    "work": "èmà",
+    "money": "ígò",}),"5": ("Tiv", {
+    "hello": "ngoohom",
+    "thank you": "msugh",
+    "please": "nenge",
+    "yes": "ẽẽ",
+    "no": "kpa",
+    "water": "nyor",
+    "food": "ikyoov",
+    "house": "ate",
+    "friend": "iortar",
+    "love": "kwase",
+    "mother": "mngu",
+    "father": "ter",
+    "child": "wan",
+    "school": "ishima",
+    "book": "ortar",
+    "sun": "ior",
+    "moon": "ter",
+    "market": "kasua",
+    "work": "isheev",
+    "money": "mba",})
 }
-print("Choose 1 Hausa | 2 igbo  | 3 Yoruba | q Quit")
+print("Choose 1 Hausa | 2 igbo  | 3 Yoruba | 4 Edo | 5 Tiv | q Quit")
 
 while True:
     choice = input("Choose language > ").strip().lower()
@@ -84,6 +124,7 @@ while True:
         if w == "back":
             break
         print(words.get(w, "Error: word not found"))
+
 
 
 
