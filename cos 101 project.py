@@ -37,7 +37,9 @@ dictionaries = { "1": ("huasa",{
     "moon": "ọnwa",
     "market": "ahịa",
     "work": "ọrụ",
-    "money": "ego"}), "3":("Yoruba",{
+    "money": "ego"}), 
+                
+    {"3":("Yoruba",{
     "hello": "báwo",
     "thank you": "ẹ ṣé",
     "please": "jọ̀wọ́",
@@ -84,6 +86,7 @@ while True:
         if w == "back":
             break
         print(words.get(w, "Error: word not found"))
+
 
 
 
