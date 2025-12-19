@@ -37,8 +37,7 @@ dictionaries = { "1": ("huasa",{
     "moon": "ọnwa",
     "market": "ahịa",
     "work": "ọrụ",
-    "money": "ego"
-                                       
+    "money": "ego"}), "3":("Yoruba",{
     "hello": "báwo",
     "thank you": "ẹ ṣé",
     "please": "jọ̀wọ́",
@@ -58,9 +57,9 @@ dictionaries = { "1": ("huasa",{
     "moon": "oṣùpá",
     "market": "ọjà",
     "work": "iṣẹ́",
-    "money": "owó,})
+    "money": "owó",})
 }
-print("Choose 1 Hausa | igbo 2 | 3 Yoruba | 4 Edo | q Quit")
+print("Choose 1 Hausa | 2 igbo  | 3 Yoruba | q Quit")
 
 while True:
     choice = input("Choose language > ").strip().lower()
@@ -85,6 +84,7 @@ while True:
         if w == "back":
             break
         print(words.get(w, "Error: word not found"))
+
 
 
 
