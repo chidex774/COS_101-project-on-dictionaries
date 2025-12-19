@@ -37,7 +37,28 @@ dictionaries = { "1": ("huasa",{
     "moon": "ọnwa",
     "market": "ahịa",
     "work": "ọrụ",
-    "money": "ego"})
+    "money": "ego"
+                                       
+    "hello": "báwo",
+    "thank you": "ẹ ṣé",
+    "please": "jọ̀wọ́",
+    "yes": "béẹ̀ni",
+    "no": "rárá",
+    "water": "omi",
+    "food": "oúnjẹ",
+    "house": "ilé",
+    "friend": "ọ̀rẹ́",
+    "love": "ìfẹ́",
+    "mother": "ìyá",
+    "father": "bàbá",
+    "child": "ọmọ",
+    "school": "ilé-ẹ̀kọ́",
+    "book": "ìwé",
+    "sun": "oorun",
+    "moon": "oṣùpá",
+    "market": "ọjà",
+    "work": "iṣẹ́",
+    "money": "owó,})
 }
 print("Choose 1 Hausa | igbo 2 | 3 Yoruba | 4 Edo | q Quit")
 
@@ -64,5 +85,6 @@ while True:
         if w == "back":
             break
         print(words.get(w, "Error: word not found"))
+
 
 
