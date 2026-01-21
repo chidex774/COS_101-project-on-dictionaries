@@ -1,3 +1,5 @@
+import streamlit as st
+
 dictionaries = { "1": ("huasa",{
     "hello": "sannu",
     "thank you": "na gode",
@@ -99,35 +101,15 @@ dictionaries = { "1": ("huasa",{
     "work": "isheev",
     "money": "mba",})
 }
-print("Choose 1 Hausa | 2 igbo  | 3 Yoruba | 4 Edo | 5 Tiv | q Quit")
+languages = {lang: words for _, (lang, words) in dictionaries.items()}
 
-while True:
-    choice = input("Choose language > ").strip().lower()
-    if choice in ("q", "quit"):
-        print("Goodbye.")
-        break
+st.title("English → Nigerian Language Translator")
 
-    lang = dictionaries.get(choice)
-    if not lang:
-        print("Invalid choice. Try 1, 2, 3, 4 or q.")
-        continue
+language = st.selectbox("Choose a language:", list(languages.keys()))
+word = st.text_input("Enter an English word:")
 
-    name, words = lang
-    print(f"Using {name}. Type an English word to translate.")
-    print("Type 'back' to choose another language, or 'q' to quit.")
-
-    while True:
-        w = input(f"{name}> ").strip().lower()
-        if w in ("q", "quit"):
-            print("Goodbye.")
-            exit()
-        if w == "back":
-            break
-        print(words.get(w, "Error: word not found"))
-
-
-
-
-
-
-
+if st.button("Translate"):
+    if word in languages[language]:
+        st.success(f"Translation: {languages[language][word]}")
+    else:
+        st.error("Word not found")
